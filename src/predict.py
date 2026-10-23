@@ -11,11 +11,13 @@ model = tf.keras.models.load_model(MODEL_PATH)
 
 class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
 
+img_rows, img_cols = 299, 299
+
 def predict_image(image_path):
     image = load_img(
         image_path, 
-        target_size=(224, 224),
-        color_mode='rgb'
+        target_size=(img_rows, img_cols),
+        color_mode='grayscale' 
     )
 
     image_array = img_to_array(image).astype('float32')
