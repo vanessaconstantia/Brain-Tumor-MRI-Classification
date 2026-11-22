@@ -7,3 +7,4 @@ scikit-learn==1.3.0
 opencv-python
 Pillow==12.3.0
 jupyter
+scikit-image
