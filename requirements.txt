@@ -8,3 +8,4 @@ opencv-python
 Pillow==12.3.0
 jupyter
 scikit-image
+tqdm
